@@ -7,6 +7,17 @@ Option Explicit
 ' http://groups.google.com/group/excel-ramblings
 'reuse of code
 ' http://ramblings.mcpher.com/Home/excelquirks/codeuse
+      Sub highlightNegativeNumbers()
+      Dim Rng As Range
+      For Each Rng In Selection
+      If WorksheetFunction.IsNumber(Rng) Then
+      If Rng.Value < 0 Then
+      Rng.Font.Color= -16776961
+      End If
+      End If
+      Next
+      End Sub
+
 Public Function rxString(sName As String, s As String, Optional ignorecase As Boolean = True) As String
     Dim rx As cregXLib
     ' create a new regx
