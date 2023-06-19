@@ -2,7 +2,7 @@ Option Explicit
 ' this is based on the ideas from http://ramblings.mcpher.com/Home/excelquirks/drivesdk/gettinggithubready
 ' and is about getting your excel code to github
 ' VbaGit v0.2.3
-
+'----------------------------------------------TESTING THROW------6/19/2023-----------------------------------------------------
 ' settings are in public var
 Dim VGSettings As cJobject
 '/**
